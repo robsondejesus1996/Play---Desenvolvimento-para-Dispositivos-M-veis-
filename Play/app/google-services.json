@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "564941546789",
+    "project_id": "play-e5d9e",
+    "storage_bucket": "play-e5d9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564941546789:android:f3cea40551feb70333a6cc",
+        "android_client_info": {
+          "package_name": "com.example.play"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564941546789-nusjgsttl9sc1jud67lnbhpr5tp9lki5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.play",
+            "certificate_hash": "1cb597791a1d702b447bff9789466a4d567ab151"
+          }
+        },
+        {
+          "client_id": "564941546789-hdghca3o59cp8vfmgi8qeh0ic0jihtvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTkKAnYU2IbTDwCuMmDKFiuuEg3TpkavI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564941546789-hdghca3o59cp8vfmgi8qeh0ic0jihtvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
