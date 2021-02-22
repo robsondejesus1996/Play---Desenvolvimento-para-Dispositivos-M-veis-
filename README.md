@@ -1,1 +1,1 @@
-Play---Desenvolvimento-para-Dispositivos-M-veis-
+Play Desenvolvimento para Dispositivos Móveis
