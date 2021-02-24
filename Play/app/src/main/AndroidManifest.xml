@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.play">
+    
+    <!-- Permissao para acessar a internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- permissoes para a minha galeria e camera -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -9,6 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Play">
+        <activity android:name=".activity.CadastrarAnuncioActivity"></activity>
+        <activity
+            android:name=".activity.MenuAnunciosActivity"
+            android:label="@string/title_activity_menu_anuncios"
+            android:theme="@style/Theme.Play.NoActionBar" />
         <activity android:name=".activity.AnunciosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    <activity android:name=".activity.CadastroActivity"></activity>
+        <activity android:name=".activity.CadastroActivity" />
     </application>
 
 </manifest>
