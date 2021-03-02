@@ -52,12 +52,15 @@ dependencies {
     implementation platform ('com.google.firebase:firebase-storage:11.8.0')
     implementation platform ('com.google.firebase:firebase-auth:11.8.0')*/
 
+
     implementation 'com.google.firebase:firebase-core:18.0.2'
     implementation 'com.google.firebase:firebase-database:19.6.0'
     implementation 'com.google.firebase:firebase-storage:15.0.0'
     implementation 'com.google.firebase:firebase-auth:15.0.0'
     implementation platform('com.google.firebase:firebase-bom:26.4.0')
     implementation 'com.google.firebase:firebase-auth'
+
+
 
     //dependencia para mascara de moeda
     implementation 'com.github.BlacKCaT27:CurrencyEditText:2.0.2'
