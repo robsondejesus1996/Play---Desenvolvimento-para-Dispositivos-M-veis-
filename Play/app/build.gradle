@@ -70,6 +70,11 @@ dependencies {
     implementation 'com.github.santalu:mask-edittext:1.0.7'
 
 
+    // dependencia dialog de progresso
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+
+
 }
     /*dependencias firebase plugin*/
     apply plugin: 'com.google.gms.google-services'
