@@ -23,7 +23,7 @@ public class Anuncio {
     }
 
 
-    public void salvar(){
+    public void salvar() {
         String idUsuario = ConfiguracaoFirebase.getIdUsuario();
         DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
                 .child("meus_anuncios");
@@ -35,7 +35,7 @@ public class Anuncio {
         salvarAnuncioPublico();
     }
 
-    public void salvarAnuncioPublico(){
+    public void salvarAnuncioPublico() {
 
         DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
                 .child("anuncios");
@@ -46,7 +46,28 @@ public class Anuncio {
                 .setValue(this);
     }
 
+    public void remover() {
+        String idUsuario = ConfiguracaoFirebase.getIdUsuario();
+        DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
+                .child("meus_anuncios")
+                .child(idUsuario)
+                .child(getIdAnuncio());
 
+        anuncioRef.removeValue();
+        removerAnuncioPublico();
+    }
+
+    public void removerAnuncioPublico() {
+
+        DatabaseReference anuncioRef = ConfiguracaoFirebase.getFirebase()
+                .child("anuncios")
+                .child(getEstado())
+                .child(getCategoria())
+                .child(getIdAnuncio());
+
+        anuncioRef.removeValue();
+
+    }
 
 
     public String getIdAnuncio() {
