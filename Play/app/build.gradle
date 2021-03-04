@@ -76,6 +76,8 @@ dependencies {
     //dependencia para picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
+    //dependencia do carousel view
+    implementation 'com.synnapps:carouselview:0.1.5'
 
 }
     /*dependencias firebase plugin*/
